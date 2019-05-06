@@ -1,32 +1,103 @@
 .App {
-  text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 8%;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+h1 {
+    font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.card {
+    padding: 0 10px 10px 10px;
+    border: 1px solid rgba(127, 32, 151, 0.801);
+    font-size: 15px;
+    width: 36.5%;
+    margin: auto;
+    line-height: 25px;
+    /* box-shadow: 2px 0 2px 0 black; */
 }
 
-.App-link {
-  color: #61dafb;
+input {
+    border: 1px solid rgba(127, 32, 151, 0.801);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.py-3 {
+    padding: 15px;
+    font-size: 15px;
+}
+
+.btn {
+    outline: none;
+    background-color: rgba(127, 32, 151, 0.801);
+    border: none;
+    padding: 17px;
+    color: white;
+    cursor: pointer;
+}
+
+.mt-5 {
+    margin-top: 3rem;
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 2px solid;
+    border-radius: 120px;
+    border-top-color: black;
+    border-bottom-color: grey;
+    animation-name: spin;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.fa-search{
+    margin-left: 5px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media(max-width:440px) {
+    .App {
+        margin-top: 20%;
+    }
+    .form {
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .one{
+        margin-top: 1rem;
+    }
+
+    .two {
+        flex-grow: 1;
+        margin: 3rem 0 3rem 0;
+    }
+    .card {
+        width: 75%;
+    }
+
+    .btn{
+           border-radius: 5px;
+    }
 }
