@@ -17,7 +17,7 @@ h1 {
     padding: 0 10px 10px 10px;
     border: 1px solid rgba(127, 32, 151, 0.801);
     font-size: 15px;
-    width: 36.5%;
+    width: 34.7%;
     margin: auto;
     line-height: 25px;
     /* box-shadow: 2px 0 2px 0 black; */
@@ -97,7 +97,7 @@ input {
         width: 75%;
     }
 
-    .btn{
+    .btn, .card{
            border-radius: 5px;
     }
 }
