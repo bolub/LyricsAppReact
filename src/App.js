@@ -52,7 +52,7 @@ class App extends Component {
           <button type="submit" className="three py-3 btn">Search<i className="fal fa-search"></i></button>
         </form>
 
-        <div className="card mt-5">
+        <div className="card my-5">
           {showSpinner}
           <p>
             {this.state.export}

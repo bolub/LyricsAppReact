@@ -41,8 +41,9 @@ input {
     cursor: pointer;
 }
 
-.mt-5 {
+.my-5 {
     margin-top: 3rem;
+    margin-bottom: 24rem;
 }
 
 .spinner {
@@ -99,5 +100,9 @@ input {
 
     .btn, .card{
            border-radius: 5px;
+    }
+
+    .my-5{
+         margin-bottom: 10rem;
     }
 }
